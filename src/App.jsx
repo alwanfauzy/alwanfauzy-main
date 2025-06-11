@@ -1,4 +1,3 @@
-import { useState } from "react";
 import profile from "./assets/profile.webp";
 import email from "./assets/email.png";
 import github from "./assets/github.png";
