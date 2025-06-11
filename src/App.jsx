@@ -22,12 +22,12 @@ function App() {
   const cards = [
     {
       name: "Resume",
-      link: "https://alwanfauzy.github.io/resume/",
+      link: "https://docs.google.com/document/d/1tlXo26tF2k1ko7JkMmZfxldvS7fIf-mW/edit?usp=sharing&ouid=108685435910779053166&rtpof=true&sd=true",
       icon: resume,
     },
     {
       name: "Portfolio",
-      link: "https://alwanfauzy.github.io/resume/",
+      link: "https://www.notion.so/alwanfauzy/Hello-I-m-Alwan-Fauzi-3c85d0f860ff4157b0969432dc16e370?pvs=4",
       icon: portfolio,
     },
   ];
@@ -63,27 +63,29 @@ function App() {
         </div>
 
         <div className="relative w-full max-w-lg">
-          {/* Cards with staggered fade-up effect */}
           <div className="relative space-y-4 z-10">
             {cards.map((card, index) => (
-              <div
+              <a
                 key={index}
-                className={`p-4 bg-white rounded-lg flex items-center cursor-pointer opacity-0 animate-fadeUp shadow-lg hover:scale-110 transition-transform duration-300`}
+                href={card.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block duration-300 opacity-0 animate-fadeUp"
                 style={{ animationDelay: `${0.3 + index * 0.15}s` }}
               >
-                <div className="flex-shrink-0 size-8 absolute">
-                  <a href={card.link} target="_blank" rel="noopener noreferrer">
+                <div className="p-4 bg-white rounded-lg flex items-center shadow-lg">
+                  <div className="absolute flex-shrink-0 size-8">
                     <img
                       src={card.icon}
                       alt={card.name}
                       className="size-full"
                     />
-                  </a>
+                  </div>
+                  <div className="flex-1 text-black font-bold text-center">
+                    {card.name}
+                  </div>
                 </div>
-                <div className="flex-1 text-black font-bold text-center">
-                  {card.name}
-                </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
