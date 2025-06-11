@@ -29,28 +29,28 @@ function App() {
       link: "https://www.notion.so/alwanfauzy/Hello-I-m-Alwan-Fauzi-3c85d0f860ff4157b0969432dc16e370?pvs=4",
       icon: portfolio,
     },
-  ];
+];
 
   return (
     <Div100vh className="flex flex-col items-center justify-between py-8 px-4 bg-gradient-to-br from-rose-100 via-indigo-100 to-sky-100">
-      <main className="flex flex-col items-center w-full">
-        <div className="flex flex-col items-center mb-4 animate-fadeInScale">
-          <div className="size-24 rounded-full overflow-hidden mb-2">
+      <main className="w-full flex-1 flex flex-col items-center md:justify-center">
+        <div className="flex flex-col items-center mb-4 md:mb-8 animate-fadeInScale">
+          <div className="size-24 md:size-32 rounded-full overflow-hidden mb-2">
             <img src={profile} />
           </div>
-          <h1 className="text-2xl font-extrabold font-outfit text-black">
+          <h1 className="text-2xl md:text-4xl font-extrabold font-outfit text-black">
             @alwanfauzy
           </h1>
         </div>
 
-        <div className="flex space-x-2 mb-8">
+        <div className="flex space-x-2 md:space-x-4 mb-8 md:mb-12">
           {socials.map((social, index) => (
             <a
               key={index}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-white shadow-sm size-10 opacity-0 animate-fadeInScale cursor-pointer"
+              className="rounded-full bg-white shadow-sm size-10 md:size-12 opacity-0 animate-fadeInScale cursor-pointer"
               style={{
                 animationDelay: `${0.4 + index * 0.12}s`, // ↓ faster chaining
                 animationDuration: "0.5s", // ↓ quicker transition
@@ -62,7 +62,7 @@ function App() {
         </div>
 
         <div className="relative w-full max-w-lg">
-          <div className="relative space-y-4 z-10">
+          <div className="relative space-y-4 md:space-y-6 z-10">
             {cards.map((card, index) => (
               <a
                 key={index}
@@ -72,15 +72,15 @@ function App() {
                 className="block duration-300 opacity-0 animate-fadeUp"
                 style={{ animationDelay: `${0.3 + index * 0.15}s` }}
               >
-                <div className="p-4 bg-white rounded-lg flex items-center shadow-lg">
-                  <div className="absolute flex-shrink-0 size-8">
+                <div className="p-4 md:p-6 bg-white rounded-lg flex items-center shadow-lg">
+                  <div className="absolute flex-shrink-0 size-8 md:size-10">
                     <img
                       src={card.icon}
                       alt={card.name}
                       className="size-full"
                     />
                   </div>
-                  <div className="flex-1 text-black font-bold text-center">
+                  <div className="flex-1 text-black font-bold text-center md:text-start md:ps-16 md:text-xl">
                     {card.name}
                   </div>
                 </div>
