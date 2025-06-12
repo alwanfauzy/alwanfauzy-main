@@ -359,6 +359,16 @@
     "@eslint/core" "^0.14.0"
     levn "^0.4.1"
 
+"@fontsource/inter@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.2.6.tgz#2c705ea57d7af283a05bb1ca59fb0f06fc5de3be"
+  integrity sha512-CZs9S1CrjD0jPwsNy9W6j0BhsmRSQrgwlTNkgQXTsAeDRM42LBRLo3eo9gCzfH4GvV7zpyf78Ozfl773826csw==
+
+"@fontsource/outfit@^5.2.6":
+  version "5.2.6"
+  resolved "https://registry.yarnpkg.com/@fontsource/outfit/-/outfit-5.2.6.tgz#7439022469b6bc0a2b0cbc0bb65f20cc158a387e"
+  integrity sha512-fXkIBhYAFJ2VU+PcPd/xi4vCdXHUaGMgSlJ0KCXcwEHqayMwzoExuoharIVgnae9wd5/QtcepFKXtmabsqIoEQ==
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@humanfs/core/-/core-0.19.1.tgz#17c55ca7d426733fe3c561906b8173c336b40a77"
