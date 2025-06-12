@@ -16,7 +16,6 @@ function App() {
     { icon: linkedin, link: "https://linkedin.com/in/alwanfauzy" },
     { icon: instagram, link: "https://instagram.com/alwanfauzy" },
     { icon: monkeytype, link: "https://monkeytype.com/profile/alwanfauzy" },
-    { icon: steam, link: "https://steamcommunity.com/id/chocorona" },
   ];
   const cards = [
     {
@@ -29,7 +28,7 @@ function App() {
       link: "https://www.notion.so/alwanfauzy/Hello-I-m-Alwan-Fauzi-3c85d0f860ff4157b0969432dc16e370?pvs=4",
       icon: portfolio,
     },
-];
+  ];
 
   return (
     <Div100vh className="flex flex-col items-center justify-between py-8 px-4 bg-gradient-to-br from-rose-100 via-indigo-100 to-sky-100">
